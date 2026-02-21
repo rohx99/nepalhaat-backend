@@ -1,0 +1,200 @@
+exports.customerSignedUpTemplate = `
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to NepalHaat!</title>
+    <style>
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 100% !important;
+            }
+
+            .credential-table {
+                display: block !important;
+            }
+
+            .credential-cell {
+                display: block !important;
+                text-align: center !important;
+                padding: 0 0 10px 0 !important;
+            }
+        }
+    </style>
+</head>
+
+<body
+    style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; line-height: 1.6; color: #333333; background-color: #f8f9fa;">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #f8f9fa;">
+        <tr>
+            <td align="center">
+                <table width="600" border="0" cellspacing="0" cellpadding="0" style="background-color: #ffffff;"
+                    class="container">
+                    <!-- Header -->
+                    <tr>
+                        <td style="background-color: #0D1627; padding: 40px 20px; text-align: center; color: #F88700;">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td style="font-size: 28px; font-weight: bold;">Welcome to NepalHaat!</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 16px; padding-top: 10px;">Your account has been successfully
+                                        created. Let's get shopping!</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- Content -->
+                    <tr>
+                        <td style="padding: 30px 20px;">
+                            <!-- Welcome Message -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0"
+                                style="background-color: #f8f9fa; padding: 20px; border-left: 4px solid #F88700;">
+                                <tr>
+                                    <td
+                                        style="font-size: 16px; font-weight: bold; color: #F88700; padding-bottom: 15px;">
+                                        Welcome, {customerName}!</td>
+                                </tr>
+                                <tr>
+                                    <td style="color: #333333; line-height: 1.5;">
+                                        Thank you for signing up with NepalHaat. We're excited to have you as part of
+                                        our community.
+                                        Your account is now active, and you can start exploring our wide range of
+                                        products right away.
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- Account Credentials -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="padding-top: 20px;">
+                                <tr>
+                                    <td
+                                        style="font-size: 20px; font-weight: bold; color: #333333; padding-bottom: 15px;">
+                                        Your Login Credentials</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0"
+                                            style="background: linear-gradient(135deg, #e8f4fd 0%, #d4edda 100%); border: 1px solid #bee5eb; padding: 25px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
+                                            class="credential-table">
+                                            <tr>
+                                                <td colspan="2" style="text-align: center; padding-bottom: 20px;">
+                                                    <span
+                                                        style="font-size: 22px; font-weight: bold; color: #0c5460; display: block;">🔐
+                                                        Secure Login Details</span>
+                                                    <span
+                                                        style="font-size: 14px; color: #6c757d; font-style: italic;">Keep
+                                                        these safe – change password after login</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="50%" style="padding-right: 15px; vertical-align: top;">
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td style="text-align: center; padding-bottom: 10px;">
+                                                                <span style="font-size: 24px; display: block;">📧</span>
+                                                                <span
+                                                                    style="font-weight: bold; color: #0c5460; font-size: 14px; display: block; padding-top: 5px;">Email
+                                                                    Address</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td
+                                                                style="background-color: #ffffff; padding: 12px; border-radius: 6px; border: 1px solid #bee5eb; text-align: center; font-family: 'Courier New', monospace; font-weight: bold; color: #0c5460; font-size: 15px; line-height: 1.4; word-break: break-all;">
+                                                                {email}
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td width="50%" style="padding-left: 15px; vertical-align: top;">
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td style="text-align: center; padding-bottom: 10px;">
+                                                                <span style="font-size: 24px; display: block;">🔒</span>
+                                                                <span
+                                                                    style="font-weight: bold; color: #0c5460; font-size: 14px; display: block; padding-top: 5px;">Temporary
+                                                                    Password</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td
+                                                                style="background-color: #ffffff; padding: 12px; border-radius: 6px; border: 1px solid #bee5eb; text-align: center; font-family: 'Courier New', monospace; font-weight: bold; color: #0c5460; font-size: 15px; line-height: 1.4; word-break: break-all;">
+                                                                {password}
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <div
+                                            style="font-size: 12px; color: #666666; padding-top: 10px; text-align: center;">
+                                            For security, please change your password after your first login.
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- Next Steps -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0"
+                                style="background-color: #fff3cd; border: 1px solid #ffeaa7; padding: 20px; margin-top: 20px;">
+                                <tr>
+                                    <td style="font-weight: bold; color: #856404; padding-bottom: 10px;">Next Steps</td>
+                                </tr>
+                                <tr>
+                                    <td style="color: #856404;">Use the button below to sign in and start browsing. If
+                                        you didn't create this account, please contact us immediately.</td>
+                                </tr>
+                            </table>
+                            <!-- CTA Button -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0"
+                                style="padding: 20px 0; text-align: center;">
+                                <tr>
+                                    <td>
+                                        <a href="https://nepalhaat.com/login"
+                                            style="display: inline-block; background-color: #F88700; color: #ffffff; text-decoration: none; padding: 12px 24px; font-weight: bold; font-size: 16px;">Sign
+                                            In Now</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- Footer -->
+                    <tr>
+                        <td
+                            style="background-color: #f8f9fa; padding: 20px; text-align: center; color: #666666; font-size: 14px; border-top: 1px solid #e9ecef;">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td style="font-weight: bold; padding-bottom: 10px;">Need Help?</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-bottom: 10px;">
+                                        Contact our customer service team at
+                                        <a href="mailto:nepalhaat@gmail.com"
+                                            style="color: #F88700; text-decoration: none;">nepalhaat@gmail.com</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        or call us at
+                                        <a href="tel:+9779707358132" style="color: #F88700; text-decoration: none;">+977
+                                            9707358132</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: 12px; color: #999999; padding-top: 20px;">
+                                        © 2025 NepalHaat. All rights reserved
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
+
+`;
